@@ -5,6 +5,7 @@ A version-controlled collection of reusable skills for Codex and compatible agen
 ## Skills
 
 - [`skill-forge`](skills/skill-forge/) — design, write, review, and improve professional agent skills.
+- [`git-safe-publish`](skills/git-safe-publish/) — safely commit, rebase, verify, resolve, and publish Git changes.
 
 Each skill lives in its own directory under `skills/` and contains a `SKILL.md`. Supporting references and scripts stay inside that skill's directory.
 

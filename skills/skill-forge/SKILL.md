@@ -1,11 +1,15 @@
 ---
 name: skill-forge
-description: Design, write, review, and improve professional agent skills for repeatable workflows. Use when creating a new skill, evaluating an existing skill, or turning an informal process into durable agent instructions.
+description: Design, write, review, and improve professional agent skills for repeatable workflows. Use when creating a new skill, evaluating an existing skill, or turning an informal process into durable agent instructions; do not use it for ordinary task execution.
+allowed-tools: Bash, Read, Write, Edit, Grep, Glob
+user-invocable: true
 ---
 
 # Skill Forge
 
 Create skills that improve an agent's decisions for a specific, repeatable task. A skill is not finished because its Markdown is well formatted; it is finished when another agent can use it predictably and its important failure modes are visible.
+
+The user's request remains authoritative. The skill may recommend a workflow, but it must not silently expand scope or grant permission for external mutations.
 
 ## Modes
 
@@ -27,6 +31,8 @@ If the mode is unclear, infer it from the request. Ask a question only when the 
 8. Test the skill against at least two realistic requests, including one boundary case.
 9. Validate metadata, naming, references, and scripts. Report limitations that testing did not cover.
 
+For a substantial or stateful skill, run the iteration protocol in [references/iteration-protocol.md](references/iteration-protocol.md). Use it as five separate review passes, not as a request to invent five rounds of prose.
+
 ## Quality gate
 
 Before declaring a skill complete, confirm:
@@ -40,6 +46,8 @@ Before declaring a skill complete, confirm:
 - References are discoverable and loaded only when relevant.
 - Scripts are deterministic, safe for their target paths, and tested.
 - The skill does not claim to prove more than its checks can establish.
+- A realistic happy path and boundary/failure paths have been exercised.
+- The final review checks the actual files and observable behavior, not only the draft.
 
 ## Output
 

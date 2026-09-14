@@ -21,6 +21,8 @@ Use this rubric for detailed reviews. Do not turn every suggestion into a mandat
 - Validation checks observable results rather than generated wording.
 - Claims are proportional to the evidence collected.
 - Repeated or fragile logic is executable or documented once in a reference.
+- Stateful workflows define preconditions, transitions, and postconditions.
+- Partial completion is distinguishable from success.
 
 ## Safety and scope
 
@@ -35,3 +37,7 @@ Use this rubric for detailed reviews. Do not turn every suggestion into a mandat
 - Conditional detail is progressively disclosed through linked references.
 - Scripts have safe argument handling and clear exit codes.
 - Examples are realistic and do not contain secrets or personal data.
+
+## Review output
+
+Prioritize findings as HIGH, MEDIUM, or LOW. Each finding should identify the evidence, explain the impact, and propose one concrete remediation. Do not emit a vague improvement suggestion.
