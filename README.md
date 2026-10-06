@@ -7,6 +7,7 @@ A version-controlled collection of reusable skills for Codex and compatible agen
 - [`skill-forge`](skills/skill-forge/) — design, write, review, and improve professional agent skills.
 - [`git-safe-publish`](skills/git-safe-publish/) — safely commit, rebase, verify, resolve, and publish Git changes.
 - [`data-scraping`](skills/data-scraping/) — build responsible, resumable website data collection workflows.
+- [`bug-sweep`](skills/bug-sweep/) — turn one confirmed bug into a pattern, find its siblings across the project, and fix them with approval.
 
 Each skill lives in its own directory under `skills/` and contains a `SKILL.md`. Supporting references and scripts stay inside that skill's directory.
 

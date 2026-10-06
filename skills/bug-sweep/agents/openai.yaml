@@ -1,0 +1,3 @@
+interface:
+  display_name: "Bug Sweep"
+  short_description: "Find and fix sibling bugs of a confirmed bug"
